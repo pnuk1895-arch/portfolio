@@ -1,0 +1,362 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1e1e1e;
+    font-family: sans-serif;
+    color: #a0a0a0;
+    line-height: 1.6;
+}
+/*  */
+.main_container{
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    max-width: 1200px;
+    gap: 40px;
+    padding-top: 40px;
+    margin: auto;
+}
+
+/* left side element */
+.slibebar{
+    background-color: #2a2a2a;
+    border-radius: 15px;
+    position: sticky;
+    top: 40px;
+    height: 770px;
+}
+
+/* profile section */
+.profile{
+    text-align: center;
+    margin-top:60px;
+}
+
+.profile img{
+    height: 141px;
+    width: 130px;
+    border-radius: 50%;
+    border: 1px solid #3a3a3a;
+}
+
+.profile h1{
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.profile p{
+    background-color: #1e1e1e;
+    color: #FFBF00;
+    padding: 6px 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #3a3a3a;
+    display: inline-block;
+    font-size: 1.1rem;
+}
+
+/* contact */
+.contact{
+    margin: 30px;
+    border-top: 2px solid #3a3a3a;
+    padding-top: 25px;
+}
+
+.label{
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #a0a0a0;
+}
+
+.value{
+    color: #e0e0e0;
+    text-decoration: none;
+    text-shadow: 0.5px 0 0 currentColor;
+}
+
+.email,.phone{
+    margin-bottom: 15px;
+}
+
+/* social media */
+.social_media{
+    margin-top: 30px;
+    border-top: 2px solid #3a3a3a;
+    padding-top: 25px;
+    text-align: center;  
+}
+
+.social_media a{
+    text-decoration: none;
+    margin: 0px 3px;
+}
+
+.social_media img{
+    height:24px;
+    width:24px;
+    filter: grayscale(1) invert(0.7);
+    transition:filter 0.3s ease;
+}
+
+.social_media img:hover{
+   filter: grayscale(0) invert(0);
+}
+
+/* right side elements */
+.main_content{
+    background-color:#2a2a2a;
+    border-radius: 15px;
+    
+}
+/* navigation bar  */
+
+.navigation{
+    display:flex;
+    justify-content: end;
+    align-items: center;
+    height: 84px;
+    border-bottom: 2px solid #3a3a3a;
+    margin: 0px 40px;
+}
+
+.navigation nav{
+    height: 16px;
+    width: 386px;
+    font-size:20px;
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+
+}
+
+.navigation nav a{
+    text-decoration: none;
+    color:#a0a0a0;
+    filter: brightness(0) saturate(100%) invert(62%) sepia(48%) saturate(0%) hue-rotate(162deg) brightness(96%) contrast(87%);
+    transition: filter 0.3s ease-out;
+}
+
+.navigation nav a:hover{
+    filter: brightness(0) saturate(100%) invert(90%) sepia(47%) saturate(4139%) hue-rotate(360deg) brightness(106%) contrast(106%);
+    font-size: 22px;
+}
+
+/* About me  */
+
+#About{
+    margin: 15px 40px ;
+}
+
+#About h1{
+    position: relative;
+    margin: 29px 0px 30px 0px;
+    color:white;
+}
+
+#About h1::after{
+    content: " ";
+    position: absolute;
+    top: 59px;
+    left: 0px;
+    background-color: yellow;
+    height: 6px;
+    width: 75px;
+    border-radius: 10px;
+}
+
+#About p{
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-top: 42px;
+}
+ 
+/* MY SKILLS */
+
+#Skills{
+    margin: 15px 40px ;
+}
+
+#Skills h1{
+    position: relative;
+    margin: 29px 0px 30px 0px;
+    color:white;
+}
+
+#Skills h1::after{
+    content: " ";
+    position: absolute;
+    top: 59px;
+    left: 0px;
+    background-color: yellow;
+    height: 6px;
+    width: 75px;
+    border-radius: 10px;
+}
+
+#Skills div{
+    height: 328px;
+    width: 715px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat( 2 ,1fr);
+    gap: 38px;
+    margin-top: 55px;
+}
+
+#Skills div span{
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+    border:2px solid rgba(0,0,0,0.3);
+}
+
+#Skills div span:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
+}
+
+#Skills div span img{
+    height: 67px;
+    width: 65px;
+    margin-top: 24px;
+    margin-bottom: 3px;
+    filter: brightness(0) saturate(100%) invert(90%) sepia(47%) saturate(4139%) hue-rotate(360deg) brightness(106%) contrast(106%);
+}
+
+#Skills div span h2{
+    font-size: 21px;
+}
+
+/* Education */
+
+#Education{
+    margin: 15px 40px ; 
+}
+
+.ed{
+    position: relative;
+    margin: 40px 0px 30px 0px;
+    color:white;
+}
+
+.ed::after{
+    content: " ";
+    position: absolute;
+    top: 59px;
+    left: 0px;
+    background-color: yellow;
+    height: 6px;
+    width: 75px;
+    border-radius: 10px;
+}
+
+.ed-main{
+    padding-left: 20px;
+    position: relative;
+    margin-top: 55px;
+}
+
+.ed-main section{ 
+    margin: 12px 0px 39px 0px;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.ed-main h1{
+    font-size: 25px;
+    /* font-family: ; */
+    margin-bottom: -4px;
+    color: white;
+}
+
+.ed-main h2{
+    font-size: 19px;
+    font-family: fangsong;
+}
+
+.goal{
+    border: 3px solid yellow;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    left: -26px;
+    top: 12px;
+    z-index: 1;
+}
+
+.liner{
+    position: absolute;
+    border: 4px solid #3a3a3a;
+    left: -3px;
+    top: 13px;
+    width: 8px;
+    height: 284px;
+}
+
+@media (max-width:786px)
+{
+.main_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    max-width: 90%;
+    gap: 97px;
+    padding-top: 40px;
+    margin: auto;
+}
+
+
+/* left slidebar */
+.slibebar{
+    background-color: #2a2a2a;
+    border-radius: 15px;
+    position: relative;
+    top: 40px;
+    left: 32px;
+    width: 90%;
+    height: 100%;
+}
+
+/* right slidebar */
+ .main_content{
+    background-color:#2a2a2a;
+    border-radius: 15px;
+    width: 90%;
+    margin-left: 32px; 
+}
+
+/* skill */
+#Skills div{
+    height: 323px;
+    width: 596px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 36px;
+    margin-top: 55px;
+    padding-right: 22px;
+}
+
+#Skills div span h2 {
+    font-size: 1.2em;
+    
+
+}
+
+#Skills div span img {
+    height: 3.5em;
+    width: 3.5em;
+    margin-top: 24px;
+    margin-bottom: 3px;
+    filter: brightness(0) saturate(100%) invert(90%) sepia(47%) saturate(4139%) hue-rotate(360deg) brightness(106%) contrast(106%);
+
+
+}
+}
