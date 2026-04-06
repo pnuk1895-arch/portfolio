@@ -300,8 +300,17 @@ body{
     height: 284px;
 }
 
-@media (max-width:786px)
+@media screen and (max-width:786px)
 {
+/* body section */
+body {
+    background-color: #1e1e1e;
+    font-family: sans-serif;
+    color: #a0a0a0;
+    line-height: 1.2; 
+}  
+
+/* main container */
 .main_container {
     display: grid;
     grid-template-columns: 1fr;
@@ -331,23 +340,77 @@ body{
     width: 85%;
     margin-left: 32px; 
 }
+/* navigation */
+.navigation {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 77px;
+    border-bottom: 3px solid #3a3a3a;
+    margin: 0px 40px;
+}
+.navigation nav a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #a0a0a0;
+    filter: brightness(0) saturate(100%) invert(62%) sepia(48%) saturate(0%) hue-rotate(162deg) brightness(96%) contrast(87%);
+    transition: filter 0.3s ease-out;
+}
+/* about seciton  */
+#About p {
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-top: 42px;
+}
+#About h1 {
+    font-size: 31px;
+    position: relative;
+    margin: 10px 0px -8px 0px;
+    color: white;
+}
+#About h1::after{
+    content: " ";
+    position: absolute;
+    top: 45px;
+    left: 0p;
+    background-color: yellow;
+    height: 6px;
+    width: 75px;
+    border-radius: 10px;
+}
 
 /* skill */
 #Skills div{
-    height: 323px;
+    height: 266px;
     width: 596px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 36px;
-    margin-top: 55px;
-    padding-right: 22px;
+    margin-top: 39px;
+    padding-right: 77px;
+}
+#Skills h1{
+    font-size: 31px;
+    position: relative;
+    margin: 29px 0px 30px 0px;
+    color:white;
 }
 
-#Skills div span h2 {
-    font-size: 1.2em;
-    
+#Skills h1::after{
+    content: " ";
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    background-color: yellow;
+    height: 6px;
+    width: 75px;
+    border-radius: 10px;
+}
 
+
+#Skills div span h2 {
+    font-size: 1em;
 }
 
 #Skills div span img {
@@ -357,6 +420,66 @@ body{
     margin-bottom: 3px;
     filter: brightness(0) saturate(100%) invert(90%) sepia(47%) saturate(4139%) hue-rotate(360deg) brightness(106%) contrast(106%);
 
+
+}
+/* education section  */
+.ed {
+    font-size: 31px;
+    position: relative;
+    margin: 40px 0px 30px 0px;
+    color: white;
+}
+.ed::after {
+    content: " ";
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    background-color: yellow;
+    height: 6px;
+    width: 75px;
+    border-radius: 10px;
+}
+.ed-main {
+    padding-left: 20px;
+    position: relative;
+    margin-top: 38px;
+}
+.ed-main h1 {
+    font-size: 18px;
+    margin-bottom: -6px;
+    color: white;
+}
+
+.ed-main h2 {
+    font-size: 15px;
+    font-family: fangsong;
+}
+
+.ed-main section {
+    margin: 12px 0px 39px 0px;
+    padding-bottom: 0px;
+    position: relative;
+}
+
+
+.goal {
+    border: 3px solid yellow;
+    border-radius: 50%;
+    height: 13px;
+    width: 13px;
+    position: absolute;
+    left: -25px;
+    top: 3px;
+    z-index: 1;
+}
+
+.liner {
+    position: absolute;
+    border: 3px solid #3a3a3a;
+    left: -1px;
+    top: 13px;
+    width: 5px;
+    height: 186px;
 
 }
 }
