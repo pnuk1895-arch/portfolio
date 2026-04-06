@@ -306,7 +306,7 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    max-width: 90%;
+    max-width: 100%;
     gap: 97px;
     padding-top: 40px;
     margin: auto;
@@ -320,7 +320,7 @@ body{
     position: relative;
     top: 40px;
     left: 32px;
-    width: 90%;
+    width: 85%;
     height: 100%;
 }
 
@@ -328,7 +328,7 @@ body{
  .main_content{
     background-color:#2a2a2a;
     border-radius: 15px;
-    width: 90%;
+    width: 85%;
     margin-left: 32px; 
 }
 
